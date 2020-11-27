@@ -13,7 +13,7 @@ composer require yukdiorder/wp-helper
 ## Penggunaan
 Misalnya , untuk membuat tambahan kolom di tabel user
 ```php
-use Helper\AdminKolomUser ;
+use Yukdiorder\WP\Helper\AdminKolomUser ;
 
 $kolom = new AdminKolomUser() ;
 $kolom->set_header('id_user', 'ID User');
@@ -22,6 +22,7 @@ $kolom->set_isi( function($user_id){
    $data = $user_id ;
    return ['data' => $data];
 });
+$kolom->run();
 
 ```
 
