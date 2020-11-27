@@ -1,0 +1,19 @@
+{
+    "name": "yukdiorder/wp-helper",
+    "description": "Membantu wordpress developer untuk mengerjakan fungsi - fungsi wordpress sederhana",
+    "type": "library",
+    "license": "GPL v2.0",
+    "authors": [
+        {
+            "name": "Isnainy Nasrullah",
+            "email": "nain.client@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload" : {
+        "psr-4" : {
+            "Helper\\" : "src/"
+        }
+    }
+}
