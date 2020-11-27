@@ -15,7 +15,7 @@
     },
     "autoload" : {
         "psr-4" : {
-            "Helper\\" : "src/"
+            "Yukdiorder\\WP\\Helper\\" : "src/"
         }
     }
 }
