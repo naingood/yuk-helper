@@ -1,5 +1,5 @@
 <?php 
-namespace Helper ;
+namespace Yukdiorder\WP\Helper ;
 
 class AdminKolomUser {
 
