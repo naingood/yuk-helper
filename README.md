@@ -1,4 +1,4 @@
-# WP Helper
+# Yuk Helper
 
 adalah library sederhana untuk membantu mengerjakan fungsi - fungsi  wordpress sederhana
 
@@ -7,7 +7,7 @@ adalah library sederhana untuk membantu mengerjakan fungsi - fungsi  wordpress s
 Gunakan composer untuk menginstall package ini 
 
 ```php
-composer require yukdiorder/wp-helper
+composer require yukdiorder/yuk-helper
 ```
 
 ## Penggunaan
