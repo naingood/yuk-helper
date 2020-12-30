@@ -1,5 +1,5 @@
 <?php
-namespace Yukdiorder\WP\Helper ;
+namespace Yukdiorder\Helper ;
 
 class AdminKolomFilter {
 

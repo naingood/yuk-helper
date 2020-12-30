@@ -1,12 +1,12 @@
 {
-    "name": "yukdiorder/wp-helper",
+    "name": "yukdiorder/yuk-helper",
     "description": "Membantu wordpress developer untuk mengerjakan fungsi - fungsi wordpress sederhana",
     "type": "library",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "Isnainy Nasrullah",
-            "email": "nain.client@gmail.com"
+            "email": "nain.daftar@gmail.com"
         }
     ],
     "minimum-stability": "dev",
@@ -15,7 +15,7 @@
     },
     "autoload" : {
         "psr-4" : {
-            "Yukdiorder\\WP\\Helper\\" : "src/"
+            "Yukdiorder\\Helper\\" : "src/"
         }
     }
 }
