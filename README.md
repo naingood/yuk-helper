@@ -27,7 +27,7 @@ $kolom->run();
 ```
 
 ## Dokumentasi
-Sedang proses pembuatan
+Sedang proses pembuatan ...
 
 ## License
 [GPL-2.0-or-later](https://choosealicense.com/licenses/mit/)
