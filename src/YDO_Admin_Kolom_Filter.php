@@ -1,7 +1,7 @@
 <?php
 namespace Yukdiorder\Helper ;
 
-class AdminKolomFilter {
+class YDO_Admin_Kolom_Filter {
 
 private $hook = 'restrict_manage_posts';
 private $post_type ;
