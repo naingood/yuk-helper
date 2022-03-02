@@ -16,7 +16,7 @@ class YDO_Post_Type{
 			'attributes'            =>  'Item Attributes', 'text_domain' ,
 			'parent_item_colon'     =>  'Parent Item:', 'text_domain' ,
 			'all_items'             =>  'Semua '. ucfirst($this->nama) ,
-			'add_new_item'          =>  'Tambah '. $this->nama .'Baru' ,
+			'add_new_item'          =>  'Tambah '. $this->nama .' Baru' ,
 			'add_new'               =>  'Tambah Baru' ,
 			'new_item'              =>  'Item Baru' ,
 			'edit_item'             =>  'Edit Item',  
