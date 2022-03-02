@@ -1,5 +1,5 @@
 <?php 
-namespace Yukdiorder\Helper ;
+namespace Yukdiorder\Helper\Woocommerce ;
 
 class YDO_Order_Status {
 
