@@ -1,7 +1,7 @@
 <?php 
 namespace Yukdiorder\Helper\Woocommerce ;
 
-class YDO_Admin_Product_Options {
+class YDO_Product_Options {
     
     public function __construct($hook = null, $tipe= null, $select = null, $id = null, $label = null, $placeholder = null ){
         if($hook == null ) {
