@@ -1,7 +1,7 @@
 <?php 
-namespace Yukdiorder\Helper ;
+namespace Yukdiorder\Helper\User ;
 
-class YDO_Admin_Kolom_User {
+class Yuk_Admin_Kolom_User {
 
 	public $hook, $hook_custom , $posisi= 0 , $kolom = [] , $slug ;
 

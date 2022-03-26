@@ -1,7 +1,7 @@
 <?php 
-namespace Yukdiorder\Helper ;
+namespace Yukdiorder\Helper\Post ;
 
-class YDO_Post_Type{
+class Yuk_Post_Type{
 	
 	public function __construct($nama, $args=null)
 	{

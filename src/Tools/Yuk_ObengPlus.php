@@ -1,9 +1,9 @@
 <?php 
-namespace Yukdiorder\Helper ;
+namespace Yukdiorder\Helper\Tools ;
 use ReflectionClass ;
 use ReflectionFunction ;
 
-class ObengPlus {
+class Yuk_ObengPlus {
 
 	private static $instances = [];
 	public $classes = [] ;
@@ -14,7 +14,7 @@ class ObengPlus {
 	protected function __clone(){}
 	
 	protected function __wakeup(){
-		throw new \Exception("Tidak dapa di serialize");
+		throw new \Exception("Tidak dapat di serialize");
 	}
 
 	public static function getInstance(){

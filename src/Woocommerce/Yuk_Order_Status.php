@@ -1,7 +1,7 @@
 <?php 
 namespace Yukdiorder\Helper\Woocommerce ;
 
-class YDO_Order_Status {
+class Yuk_Order_Status {
 
     public function __construct($label , $args = null){
         

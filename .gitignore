@@ -1,7 +1,7 @@
-admin/
-includes/
+// admin/
+//includes/
 languages/
-public/
+// public/
 vendor/
 index.php
 uninstall.php

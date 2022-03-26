@@ -1,7 +1,7 @@
 <?php 
-namespace Yukdiorder\Helper ;
+namespace Yukdiorder\Helper\Admin ;
 
-class YDO_Admin_Notice {
+class Yuk_Admin_Notice {
     public $pesan ; 
 
     public function __construct($pesan, $type = null ){

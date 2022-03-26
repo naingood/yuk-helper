@@ -1,11 +1,20 @@
 <?php 
-namespace Yukdiorder\Helper ;
+namespace Yukdiorder\Helper\Post ;
 
-class YDO_Taxonomy
+class Yuk_Taxonomy
 {
     // Register Custom Taxonomy
-    public function __construct($nama, $args = null)
+    public function __construct($nama, $post_type , $args = null)
     {
+        $this->post_type = [];
+        if(is_array($post_type)){
+            foreach($post_type as $type ){
+                array_push($this->post_type, $type);
+            }
+        } else {
+            array_push($this->post_type, $type);
+        }
+
         $this->nama = $nama;
         $this->labels = array(
             'name'                       => ucfirst($this->nama),
@@ -46,8 +55,7 @@ class YDO_Taxonomy
         
     }
 	public function init(){
-		// register_post_type($this->nama, $this->args);
-		register_taxonomy($this->nama, array('post'), $this->args);
+		register_taxonomy($this->nama, $this->post_type, $this->args);
 
 	}
 }

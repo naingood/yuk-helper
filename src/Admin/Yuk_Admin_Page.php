@@ -1,7 +1,7 @@
 <?php
-namespace Yukdiorder\Helper ;
+namespace Yukdiorder\Helper\Admin ;
 
-class YDO_Admin_Page {
+class Yuk_Admin_Page {
 
     public function __construct($nama = null , $caps = null, $position = null, $file = null ){
         $this->nama = $nama ;

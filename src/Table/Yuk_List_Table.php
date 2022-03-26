@@ -1,7 +1,7 @@
 <?php 
-namespace Yukdiorder\Helper ;
+namespace Yukdiorder\Helper\Table ;
 
-class YDO_List_Table {
+class Yuk_List_Table {
  
     /**
      * The current list of items.
