@@ -27,7 +27,7 @@ $kolom->run();
 ```
 
 ## Dokumentasi
-Sedang proses pembuatan ...
+[https://yuk-helper.readthedocs.io/id/latest/](https://yuk-helper.readthedocs.io/id/latest/)
 
 ## License
 [GPL-2.0-or-later](https://choosealicense.com/licenses/mit/)
