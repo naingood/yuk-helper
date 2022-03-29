@@ -12,25 +12,18 @@ library sederhana untuk pekerjaan wordpress
 :Version: 1.0 of 2001/08/08
 :Dedication: To my father.
 
-Titles are underlined (or over-
-and underlined) with a printing
-nonalphanumeric 7-bit ASCII
-character. Recommended choices
-are "``= - ` : ' " ~ ^ _ * + # < >``".
-The underline/overline must be at
-least as long as the title text.
+## Penggunaan
+Misalnya , untuk membuat tambahan kolom di tabel user
+```php
+use Yukdiorder\WP\Helper\AdminKolomUser ;
 
-A lone top-level (sub)section
-is lifted up to be the document's
-(sub)title.
+$kolom = new AdminKolomUser() ;
+$kolom->set_header('id_user', 'ID User');
+$kolom->set_posisi(5);
+$kolom->set_isi( function($user_id){
+   $data = $user_id ;
+   return ['data' => $data];
+});
+$kolom->run();
 
-- This is item 1
-- This is item 2
-
-- Bullets are "-", "*" or "+".
-  Continuing text must be aligned
-  after the bullet and whitespace.
-
-Note that a blank line is required
-before the first item and after the
-last, but is optional between items.
+```
