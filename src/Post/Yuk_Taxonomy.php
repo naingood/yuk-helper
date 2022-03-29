@@ -12,7 +12,7 @@ class Yuk_Taxonomy
                 array_push($this->post_type, $type);
             }
         } else {
-            array_push($this->post_type, $type);
+            array_push($this->post_type,  $post_type);
         }
 
         $this->nama = $nama;
