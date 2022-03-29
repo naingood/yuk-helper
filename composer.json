@@ -9,10 +9,9 @@
             "email": "nain.daftar@gmail.com"
         }
     ],
-    "minimum-stability": "dev-master",
+    "minimum-stability": "dev",
     "require": {
-        "php": ">=7.0",
-        "htmlburger/carbon-fields-plugin": "dev-master"
+        "php": ">=7.0"
     },
     "autoload" : {
         "psr-4" : {
