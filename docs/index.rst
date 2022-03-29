@@ -3,6 +3,15 @@ Yuk Helper
 =====
 library sederhana untuk pekerjaan wordpress 
 --------
+:Authors:
+    Isnainy Nasrullah,
+    Wildan Ferdiansyah,
+    Aditya Yosia Budiharto 
+    (and sundry other good-natured folks)
+
+:Version: 1.0 of 2001/08/08
+:Dedication: To my father.
+
 Titles are underlined (or over-
 and underlined) with a printing
 nonalphanumeric 7-bit ASCII
