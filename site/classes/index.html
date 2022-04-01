@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://www.yukdiorder.com/classes/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Classes - Yuk Helper Reference</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Classes";
+        var mkdocs_page_input_path = "classes.md";
+        var mkdocs_page_url = "/classes/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Yuk Helper Reference
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Classes</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#admin_kolom">Admin Kolom</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Yuk Helper Reference</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Classes</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="admin">Admin<a class="headerlink" href="#admin" title="Permanent link">#</a></h1>
+<h2 id="admin_kolom">Admin Kolom<a class="headerlink" href="#admin_kolom" title="Permanent link">#</a></h2>
+<p><code>Yuk_Admin_Kolom($post_type)</code></p>
+<p>Membuat tambahan kolom pada list table post type tertentu</p>
+<p><strong>Parameter</strong></p>
+<p><code>post_type</code> : jenis post type</p>
+<p><strong>Return</strong></p>
+<p><code>void</code></p>
+<p><strong>Contoh :</strong></p>
+<pre><code class="language-php">use Yukdiorder\Helper\Admin\Yuk_Admin_Kolom ;
+
+$kolom = new Yuk_Admin_Kolom('post') ;
+$kolom-&gt;set_header('id_user', 'ID User');
+$kolom-&gt;set_posisi(5);
+$kolom-&gt;set_isi( function($user_id){
+   $data = $user_id ;
+   return ['data' =&gt; $data];
+});
+$kolom-&gt;run();
+
+</code></pre>
+<h1 id="post_type">Post Type<a class="headerlink" href="#post_type" title="Permanent link">#</a></h1>
+<h2 id="post_type_1">Post Type<a class="headerlink" href="#post_type_1" title="Permanent link">#</a></h2>
+<p><code>Yuk_Post_Type($nama, $args = null )</code></p>
+<p>Buat post type baru</p>
+<p><strong>Parameter</strong>
+<code>$nama</code> : nama post type
+<code>$args</code> : argumen post type</p>
+<p><strong>Return</strong></p>
+<p><strong>Contoh:</strong></p>
+<pre><code class="language-php">    use Yukdiorder\Helper\Post\Yuk_Post_Type ;
+    add_action('init' , array( new Yuk_Post_Type('komisi') , 'init'));
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

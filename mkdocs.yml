@@ -4,3 +4,7 @@ nav:
     - Home: index.md
     - Classes: classes.md
 theme: readthedocs
+markdown_extensions:
+    - toc:
+        permalink: "#"
+        separator: "_"

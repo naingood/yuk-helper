@@ -17,19 +17,24 @@ Membuat tambahan kolom pada list table post type tertentu
 **Contoh :**
 
 ```php
+<?php 
 use Yukdiorder\Helper\Admin\Yuk_Admin_Kolom ;
 
-$kolom = new Yuk_Admin_Kolom('post') ;
-$kolom->set_header('id_user', 'ID User');
-$kolom->set_posisi(5);
-$kolom->set_isi( function($user_id){
-   $data = $user_id ;
+ $kolom = new Yuk_Admin_Kolom('post') ;
+ $kolom->set_header('id_user', 'ID User');
+ $kolom->set_posisi(5);
+ $kolom->set_isi( function($user_id){
+  $data = $user_id ;
    return ['data' => $data];
 });
 $kolom->run();
 
+?>
 ``` 
+
+
 ## Post Type
+
 `Yuk_Post_Type($nama, $args = null )`
 
 Buat post type baru
