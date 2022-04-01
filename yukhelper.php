@@ -31,32 +31,32 @@ use Yukdiorder\Helper\Post\Yuk_Taxonomy as Taxonomy ;
 
 //add_action('init' , array(new Taxonomy('Gudang', 'product'),'init'));
 
-add_action('carbon_fields_register_fields' , function(){
+// add_action('carbon_fields_register_fields' , function(){
 	
-	$query =  get_posts(array(
-		'post_type' => 'product',
-		'numberposts' => -1,
-	));
+// 	$query =  get_posts(array(
+// 		'post_type' => 'product',
+// 		'numberposts' => -1,
+// 	));
 
-	$product = [] ;
-	foreach($query as $prod){
-		$product[$prod->ID] = $prod->post_title ;
-	}
+// 	$product = [] ;
+// 	foreach($query as $prod){
+// 		$product[$prod->ID] = $prod->post_title ;
+// 	}
 
 
 
-	$form_po = Container::make('theme_options' , 'Formulir PO');
-	$html = "<p>iuhiuh<p>";
-	$form_po->add_fields(array(
+// 	$form_po = Container::make('theme_options' , 'Formulir PO');
+// 	$html = "<p>iuhiuh<p>";
+// 	$form_po->add_fields(array(
 		
-		Field::make('html', 'header_form', 'Header')
-			->set_html($html),
-		Field::make('select', 'produk', 'Produk')
-			->add_options($product),
-		Field::make('date' , 'po_tanggal_mulai','Tanggal Mulai Preorder'),
-		Field::make('date' , 'po_tanggal_selesai','Tanggal Selesai Preorder')
-	));
-});
+// 		Field::make('html', 'header_form', 'Header')
+// 			->set_html($html),
+// 		Field::make('select', 'produk', 'Produk')
+// 			->add_options($product),
+// 		Field::make('date' , 'po_tanggal_mulai','Tanggal Mulai Preorder'),
+// 		Field::make('date' , 'po_tanggal_selesai','Tanggal Selesai Preorder')
+// 	));
+// });
 	
 
 
@@ -66,17 +66,3 @@ add_action('admin_menu' , function(){
 		$tabel->display();
 	}, '', 2 );
 });
-
-
-// add_filter('carbon_fields_should_save_field_value', function($save , $value, $field){
-// $save = false ;
-// $html = "
-// <div>
-// <label></label>
-// [submit_kirim]
-// </div>
-// ";
-// // wp_insert_post , post_type = wpcf7_contact_form 
-// // $value di lempar ke Contact Form 7
-// return $value ;
-// });
