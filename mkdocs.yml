@@ -2,5 +2,5 @@ site_name: Yuk Helper Reference
 site_url: https://www.yukdiorder.com/
 nav:
     - Home: index.md
-    - About: about.md
+    - Classes: classes.md
 theme: readthedocs
