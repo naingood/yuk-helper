@@ -35,7 +35,8 @@ $kolom->run();
 Buat post type baru
 
 **Parameter**
-
+`$nama` : nama post type
+`$args` : argumen post type
 
 **Return**
 
